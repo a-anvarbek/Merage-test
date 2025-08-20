@@ -1,0 +1,1124 @@
+/* replace this file */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #000000;
+  --foreground: #F8F6F0;
+  --card: #F8F6F0;
+  --card-foreground: #000000;
+  --popover: #F8F6F0;
+  --popover-foreground: #000000;
+  --primary: #000000;
+  --primary-foreground: #F8F6F0;
+  --secondary: #D4AF37;
+  --secondary-foreground: #000000;
+  --muted: #FAF9F5;
+  --muted-foreground: #6B6B6B;
+  --accent: #D4AF37;
+  --accent-foreground: #000000;
+  --destructive: #d4183d;
+  --destructive-foreground: #F8F6F0;
+  --border: rgba(0, 0, 0, 0.08);
+  --input: transparent;
+  --input-background: #FAF9F5;
+  --switch-background: #F0F0F0;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #D4AF37;
+
+  /* Nippon Imperial Unified Colors - ULTIMATE LUXURY EXCLUSIVITY */
+  /* Obsidian Black Variations (60% - Ultra Premium Dominant) */
+  --nippon-black: #0A0A0A;
+  --nippon-black-light: #151515;
+  --nippon-black-dark: #000000;
+  --nippon-black-muted: #1A1A1A;
+  --nippon-charcoal: #0F0F0F;
+  --nippon-rich-charcoal: #121212;
+  --nippon-matte-black: #080808;
+  --nippon-obsidian: #050505;
+  --nippon-midnight: #0C0C0C;
+  
+  /* Bridge Tones - Ultra-refined transitions */
+  --nippon-warm-gray: #2A2A2A;
+  --nippon-warm-gray-light: #353535;
+  --nippon-warm-gray-dark: #1F1F1F;
+  --nippon-medium-warm: #404040;
+  --nippon-soft-charcoal: #252525;
+  --nippon-platinum-gray: #4A4A4A;
+  
+  /* Pearl Champagne Tones (30% - Ultra-sophisticated Secondary) */
+  --nippon-warm-white: #F8F6F3;
+  --nippon-warm-white-light: #FDFCFA;
+  --nippon-warm-white-dark: #F5F3F0;
+  --nippon-beige: #F2F0ED;
+  --nippon-beige-light: #F7F5F2;
+  --nippon-cream: #F0EDE8;
+  --nippon-ivory: #F4F2EF;
+  --nippon-warm-beige: #EDE9E4;
+  --nippon-pearl: #FAF9F7;
+  --nippon-champagne: #F1EFE9;
+  --nippon-platinum-white: #F6F5F3;
+  
+  /* Premium Metallic Gold System (10% - Imperial Accent) */
+  --nippon-gold: #D4AF37;
+  --nippon-gold-light: #E8C547;
+  --nippon-gold-dark: #B8941F;
+  --nippon-gold-muted: #C9A96E;
+  --nippon-gold-bright: #F4D03F;
+  --nippon-pure-gold: #FFD700;
+  --nippon-rose-gold: #E8B4A0;
+  --nippon-copper-gold: #CD853F;
+  --nippon-platinum: #E5E4E2;
+  
+  /* Supporting Ultra-Premium Colors */
+  --nippon-white: #FFFFFF;
+  --nippon-gray: #555555;
+  --nippon-gray-light: #777777;
+  --nippon-gray-dark: #333333;
+  --nippon-border: #E8E6E0;
+  --nippon-shadow: rgba(0, 0, 0, 0.25);
+
+  /* Typography Variables */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Typography Scale */
+  --text-xs: 0.875rem;    
+  --text-sm: 0.9375rem;   
+  --text-base: 1rem;      
+  --text-lg: 1.125rem;    
+  --text-xl: 1.25rem;     
+  --text-2xl: 1.5rem;     
+  --text-3xl: 1.875rem;   
+  --text-4xl: 2.25rem;    
+  --text-5xl: 3rem;       
+  --text-6xl: 3.75rem;    
+  --text-7xl: 4.5rem;     
+  --text-8xl: 6rem;       
+  --text-9xl: 8rem;       
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #F8F6F0;
+  --card: #1A1A1A;
+  --card-foreground: #F8F6F0;
+  --popover: #1A1A1A;
+  --popover-foreground: #F8F6F0;
+  --primary: #F8F6F0;
+  --primary-foreground: #000000;
+  --secondary: #D4AF37;
+  --secondary-foreground: #000000;
+  --muted: #2D2D2D;
+  --muted-foreground: #9B9B9B;
+  --accent: #D4AF37;
+  --accent-foreground: #000000;
+  --destructive: #d4183d;
+  --destructive-foreground: #F8F6F0;
+  --border: rgba(248, 246, 240, 0.08);
+  --input: #2D2D2D;
+  --ring: #D4AF37;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  
+  /* Nippon Imperial Brand Colors for Tailwind */
+  --color-nippon-black: var(--nippon-black);
+  --color-nippon-black-light: var(--nippon-black-light);
+  --color-nippon-black-dark: var(--nippon-black-dark);
+  --color-nippon-black-muted: var(--nippon-black-muted);
+  --color-nippon-charcoal: var(--nippon-charcoal);
+  --color-nippon-rich-charcoal: var(--nippon-rich-charcoal);
+  --color-nippon-matte-black: var(--nippon-matte-black);
+  --color-nippon-obsidian: var(--nippon-obsidian);
+  --color-nippon-midnight: var(--nippon-midnight);
+  --color-nippon-warm-gray: var(--nippon-warm-gray);
+  --color-nippon-warm-gray-light: var(--nippon-warm-gray-light);
+  --color-nippon-warm-gray-dark: var(--nippon-warm-gray-dark);
+  --color-nippon-medium-warm: var(--nippon-medium-warm);
+  --color-nippon-soft-charcoal: var(--nippon-soft-charcoal);
+  --color-nippon-platinum-gray: var(--nippon-platinum-gray);
+  --color-nippon-warm-white: var(--nippon-warm-white);
+  --color-nippon-beige: var(--nippon-beige);
+  --color-nippon-beige-light: var(--nippon-beige-light);
+  --color-nippon-cream: var(--nippon-cream);
+  --color-nippon-ivory: var(--nippon-ivory);
+  --color-nippon-warm-beige: var(--nippon-warm-beige);
+  --color-nippon-pearl: var(--nippon-pearl);
+  --color-nippon-champagne: var(--nippon-champagne);
+  --color-nippon-platinum-white: var(--nippon-platinum-white);
+  --color-nippon-gold: var(--nippon-gold);
+  --color-nippon-gold-light: var(--nippon-gold-light);
+  --color-nippon-gold-dark: var(--nippon-gold-dark);
+  --color-nippon-gold-muted: var(--nippon-gold-muted);
+  --color-nippon-gold-bright: var(--nippon-gold-bright);
+  --color-nippon-pure-gold: var(--nippon-pure-gold);
+  --color-nippon-rose-gold: var(--nippon-rose-gold);
+  --color-nippon-copper-gold: var(--nippon-copper-gold);
+  --color-nippon-platinum: var(--nippon-platinum);
+  --color-nippon-white: var(--nippon-white);
+  --color-nippon-gray: var(--nippon-gray);
+  --color-nippon-gray-light: var(--nippon-gray-light);
+  --color-nippon-gray-dark: var(--nippon-gray-dark);
+  --color-nippon-border: var(--nippon-border);
+  --color-nippon-shadow: var(--nippon-shadow);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-nippon-warm-white text-nippon-black;
+    font-family: var(--font-sans);
+    font-size: var(--font-size);
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    @apply bg-nippon-warm-white;
+    scroll-behavior: smooth;
+  }
+
+  /* Enhanced scrollbar styling for black gold luxury */
+  body::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--nippon-gold);
+    border-radius: 2px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: var(--nippon-gold-dark);
+  }
+
+  /* Ensure smooth scrolling on all platforms */
+  @supports (scroll-behavior: smooth) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+/**
+ * Black, Gold & Warm White Luxury Typography System (60-30-10)
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-family: var(--font-serif);
+      font-size: var(--text-5xl);
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--nippon-black);
+      letter-spacing: 0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-family: var(--font-serif);
+      font-size: var(--text-4xl);
+      font-weight: 500;
+      line-height: 1.25;
+      color: var(--nippon-black);
+      letter-spacing: 0.015em;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-family: var(--font-serif);
+      font-size: var(--text-3xl);
+      font-weight: 500;
+      line-height: 1.3;
+      color: var(--nippon-black);
+      letter-spacing: 0.01em;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-family: var(--font-sans);
+      font-size: var(--text-xl);
+      font-weight: 500;
+      line-height: 1.4;
+      color: var(--nippon-black);
+      letter-spacing: 0.01em;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-family: var(--font-sans);
+      font-size: var(--text-base);
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--nippon-gray-dark);
+      letter-spacing: 0.005em;
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      font-size: var(--text-xl);
+      line-height: 1.6;
+      color: var(--nippon-black);
+      font-weight: 300;
+    }
+
+    label {
+      font-family: var(--font-sans);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--nippon-black);
+      letter-spacing: 0.01em;
+    }
+
+    button {
+      font-family: var(--font-sans);
+      font-size: var(--text-base);
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: 0.025em;
+    }
+
+    input, textarea, select {
+      font-family: var(--font-sans);
+      font-size: var(--text-base);
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--nippon-black);
+    }
+  }
+}
+
+/* Nippon Imperial Utility Classes - Black, Gold & Warm White (60-30-10) */
+@layer utilities {
+  /* Black Colors (60% - Dominant) */
+  .bg-nippon-black {
+    background-color: var(--nippon-black);
+  }
+  
+  .bg-nippon-black-light {
+    background-color: var(--nippon-black-light);
+  }
+  
+  .bg-nippon-black-dark {
+    background-color: var(--nippon-black-dark);
+  }
+  
+  .bg-nippon-black-muted {
+    background-color: var(--nippon-black-muted);
+  }
+  
+  .bg-nippon-charcoal {
+    background-color: var(--nippon-charcoal);
+  }
+  
+  .bg-nippon-matte-black {
+    background-color: var(--nippon-matte-black);
+  }
+  
+  .text-nippon-black {
+    color: var(--nippon-black);
+  }
+  
+  .text-nippon-black-light {
+    color: var(--nippon-black-light);
+  }
+  
+  .text-nippon-black-dark {
+    color: var(--nippon-black-dark);
+  }
+  
+  .text-nippon-black-muted {
+    color: var(--nippon-black-muted);
+  }
+  
+  .text-nippon-charcoal {
+    color: var(--nippon-charcoal);
+  }
+  
+  /* Bridge Tone Colors - Critical for luminance harmony */
+  .bg-nippon-warm-gray {
+    background-color: var(--nippon-warm-gray);
+  }
+  
+  .bg-nippon-warm-gray-light {
+    background-color: var(--nippon-warm-gray-light);
+  }
+  
+  .bg-nippon-warm-gray-dark {
+    background-color: var(--nippon-warm-gray-dark);
+  }
+  
+  .bg-nippon-medium-warm {
+    background-color: var(--nippon-medium-warm);
+  }
+  
+  .bg-nippon-soft-charcoal {
+    background-color: var(--nippon-soft-charcoal);
+  }
+  
+  /* Warm White/Beige Colors (30% - Secondary) */
+  .bg-nippon-warm-white {
+    background-color: var(--nippon-warm-white);
+  }
+  
+  .bg-nippon-warm-white-light {
+    background-color: var(--nippon-warm-white-light);
+  }
+  
+  .bg-nippon-warm-white-dark {
+    background-color: var(--nippon-warm-white-dark);
+  }
+  
+  .bg-nippon-beige {
+    background-color: var(--nippon-beige);
+  }
+  
+  .bg-nippon-beige-light {
+    background-color: var(--nippon-beige-light);
+  }
+  
+  .bg-nippon-cream {
+    background-color: var(--nippon-cream);
+  }
+  
+  .bg-nippon-ivory {
+    background-color: var(--nippon-ivory);
+  }
+  
+  .text-nippon-warm-white {
+    color: var(--nippon-warm-white);
+  }
+  
+  .text-nippon-warm-white-light {
+    color: var(--nippon-warm-white-light);
+  }
+  
+  .text-nippon-warm-white-dark {
+    color: var(--nippon-warm-white-dark);
+  }
+  
+  .text-nippon-beige {
+    color: var(--nippon-beige);
+  }
+  
+  .text-nippon-beige-light {
+    color: var(--nippon-beige-light);
+  }
+  
+  .text-nippon-cream {
+    color: var(--nippon-cream);
+  }
+  
+  .text-nippon-ivory {
+    color: var(--nippon-ivory);
+  }
+  
+  /* Gold Colors (10% - Accent) */
+  .bg-nippon-gold {
+    background-color: var(--nippon-gold);
+  }
+  
+  .bg-nippon-gold-light {
+    background-color: var(--nippon-gold-light);
+  }
+  
+  .bg-nippon-gold-dark {
+    background-color: var(--nippon-gold-dark);
+  }
+  
+  .bg-nippon-gold-muted {
+    background-color: var(--nippon-gold-muted);
+  }
+  
+  .bg-nippon-gold-bright {
+    background-color: var(--nippon-gold-bright);
+  }
+  
+  .text-nippon-gold {
+    color: var(--nippon-gold);
+  }
+  
+  .text-nippon-gold-light {
+    color: var(--nippon-gold-light);
+  }
+  
+  .text-nippon-gold-dark {
+    color: var(--nippon-gold-dark);
+  }
+  
+  .text-nippon-gold-muted {
+    color: var(--nippon-gold-muted);
+  }
+  
+  .text-nippon-gold-bright {
+    color: var(--nippon-gold-bright);
+  }
+  
+  /* Supporting Colors */
+  .bg-nippon-white {
+    background-color: var(--nippon-white);
+  }
+  
+  .bg-nippon-rich-charcoal {
+    background-color: var(--nippon-rich-charcoal);
+  }
+  
+  .bg-nippon-warm-beige {
+    background-color: var(--nippon-warm-beige);
+  }
+  
+  .text-nippon-white {
+    color: var(--nippon-white);
+  }
+  
+  .text-nippon-gray {
+    color: var(--nippon-gray);
+  }
+  
+  .text-nippon-gray-light {
+    color: var(--nippon-gray-light);
+  }
+  
+  .text-nippon-gray-dark {
+    color: var(--nippon-gray-dark);
+  }
+  
+  /* Border Colors */
+  .border-nippon-black {
+    border-color: var(--nippon-black);
+  }
+  
+  .border-nippon-warm-white {
+    border-color: var(--nippon-warm-white);
+  }
+  
+  .border-nippon-gold {
+    border-color: var(--nippon-gold);
+  }
+  
+  .border-nippon-border {
+    border-color: var(--nippon-border);
+  }
+  
+  /* Hover States */
+  .hover\:bg-nippon-gold:hover {
+    background-color: var(--nippon-gold);
+  }
+  
+  .hover\:bg-nippon-gold-dark:hover {
+    background-color: var(--nippon-gold-dark);
+  }
+  
+  .hover\:bg-nippon-black:hover {
+    background-color: var(--nippon-black);
+  }
+  
+  .hover\:bg-nippon-warm-white:hover {
+    background-color: var(--nippon-warm-white);
+  }
+  
+  .hover\:text-nippon-gold:hover {
+    color: var(--nippon-gold);
+  }
+  
+  .hover\:text-nippon-black:hover {
+    color: var(--nippon-black);
+  }
+  
+  .hover\:text-nippon-warm-white:hover {
+    color: var(--nippon-warm-white);
+  }
+  
+  /* Typography utilities */
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  
+  /* Text sizes */
+  .text-luxury-xs { font-size: var(--text-xs); }
+  .text-luxury-sm { font-size: var(--text-sm); }
+  .text-luxury-base { font-size: var(--text-base); }
+  .text-luxury-lg { font-size: var(--text-lg); }
+  .text-luxury-xl { font-size: var(--text-xl); }
+  .text-luxury-2xl { font-size: var(--text-2xl); }
+  .text-luxury-3xl { font-size: var(--text-3xl); }
+  .text-luxury-4xl { font-size: var(--text-4xl); }
+  .text-luxury-5xl { font-size: var(--text-5xl); }
+  .text-luxury-6xl { font-size: var(--text-6xl); }
+  .text-luxury-7xl { font-size: var(--text-7xl); }
+  .text-luxury-8xl { font-size: var(--text-8xl); }
+  .text-luxury-9xl { font-size: var(--text-9xl); }
+  
+  /* Black gold warm white luxury text effects */
+  .text-with-shadow {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .text-with-strong-shadow {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-with-gold-glow {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  }
+  
+  .text-with-black-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-with-elegant-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Black gold warm white luxury overlay utilities */
+  .bg-radial-gradient {
+    background: radial-gradient(circle at center, var(--tw-gradient-stops));
+  }
+  
+  .luxury-overlay {
+    background: linear-gradient(135deg, rgba(28, 27, 26, 0.95) 0%, rgba(31, 30, 28, 0.9) 100%);
+  }
+  
+  .warm-white-overlay {
+    background: linear-gradient(135deg, rgba(232, 228, 221, 0.98) 0%, rgba(239, 235, 228, 0.95) 100%);
+  }
+  
+  .black-gradient {
+    background: linear-gradient(135deg, var(--nippon-black) 0%, var(--nippon-black-light) 100%);
+  }
+  
+  .warm-white-gradient {
+    background: linear-gradient(135deg, var(--nippon-warm-white-light) 0%, var(--nippon-warm-white) 100%);
+  }
+  
+  .cinematic-gradient {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.98) 0%, rgba(26, 26, 26, 0.95) 50%, rgba(45, 45, 45, 0.9) 100%);
+  }
+  
+  .text-overlay-gradient {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(26, 26, 26, 0.85) 40%, transparent 100%);
+  }
+  
+  .gold-divider {
+    background: linear-gradient(90deg, transparent 0%, var(--nippon-gold) 50%, transparent 100%);
+  }
+  
+  .luxury-divider {
+    background: linear-gradient(90deg, transparent 0%, var(--nippon-warm-white) 30%, var(--nippon-gold) 50%, var(--nippon-warm-white) 70%, transparent 100%);
+  }
+  
+  .black-gold-divider {
+    background: linear-gradient(90deg, transparent 0%, var(--nippon-black-light) 20%, var(--nippon-gold) 50%, var(--nippon-black-light) 80%, transparent 100%);
+  }
+  
+  /* Unified Transition Elements - Harmonious Luminance */
+  .section-transition-gradient {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(58, 56, 53, 0.1) 20%,
+      rgba(74, 69, 63, 0.15) 40%,
+      rgba(212, 175, 55, 0.05) 50%,
+      rgba(74, 69, 63, 0.15) 60%,
+      rgba(58, 56, 53, 0.1) 80%,
+      transparent 100%
+    );
+  }
+  
+  .harmonious-bridge-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--nippon-black) 0%,
+      var(--nippon-warm-gray-dark) 25%,
+      var(--nippon-warm-gray) 50%,
+      var(--nippon-medium-warm) 75%,
+      var(--nippon-warm-white-dark) 100%
+    );
+  }
+  
+  /* Unified Transition Elements */
+  .section-transition-gradient {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(26, 26, 26, 0.1) 25%,
+      rgba(212, 175, 55, 0.05) 45%,
+      rgba(212, 175, 55, 0.05) 55%,
+      rgba(26, 26, 26, 0.1) 75%,
+      transparent 100%
+    );
+  }
+  
+  .silk-texture {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D4AF37' fill-opacity='0.01'%3E%3Cpolygon points='10 0 20 10 10 20 0 10'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .matte-texture {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
+  }
+  
+  /* 60-30-10 Card Styles */
+  .black-card-dominant {
+    background: var(--nippon-black);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--nippon-warm-white);
+  }
+  
+  .warm-white-card-secondary {
+    background: linear-gradient(135deg, var(--nippon-warm-white) 0%, var(--nippon-warm-white-light) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    color: var(--nippon-black);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gold-accent-minimal {
+    background: transparent;
+    border: 2px solid var(--nippon-gold);
+    color: var(--nippon-gold);
+  }
+  
+  /* Spacing utilities */
+  .section-padding {
+    padding: 5rem 0;
+  }
+  
+  .section-padding-sm {
+    padding: 3rem 0;
+  }
+  
+  .content-padding {
+    padding: 0 1.5rem;
+  }
+  
+  /* Black gold warm white luxury shadow utilities */
+  .shadow-gold {
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+  }
+  
+  .shadow-gold-hover {
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
+  }
+  
+  .shadow-black {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .shadow-black-hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+  
+  .shadow-luxury {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shadow-luxury-hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .shadow-elegant {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  }
+  
+  .shadow-elegant-hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shadow-warm-white {
+    box-shadow: 0 2px 8px rgba(248, 246, 240, 0.1);
+  }
+  
+  .shadow-warm-white-hover {
+    box-shadow: 0 6px 20px rgba(248, 246, 240, 0.15);
+  }
+  
+  /* Ultra-Premium New Colors */
+  .bg-nippon-obsidian {
+    background-color: var(--nippon-obsidian);
+  }
+  
+  .bg-nippon-midnight {
+    background-color: var(--nippon-midnight);
+  }
+  
+  .bg-nippon-platinum-gray {
+    background-color: var(--nippon-platinum-gray);
+  }
+  
+  .bg-nippon-pearl {
+    background-color: var(--nippon-pearl);
+  }
+  
+  .bg-nippon-champagne {
+    background-color: var(--nippon-champagne);
+  }
+  
+  .bg-nippon-platinum-white {
+    background-color: var(--nippon-platinum-white);
+  }
+  
+  .bg-nippon-pure-gold {
+    background-color: var(--nippon-pure-gold);
+  }
+  
+  .bg-nippon-rose-gold {
+    background-color: var(--nippon-rose-gold);
+  }
+  
+  .bg-nippon-copper-gold {
+    background-color: var(--nippon-copper-gold);
+  }
+  
+  .bg-nippon-platinum {
+    background-color: var(--nippon-platinum);
+  }
+  
+  .text-nippon-obsidian {
+    color: var(--nippon-obsidian);
+  }
+  
+  .text-nippon-midnight {
+    color: var(--nippon-midnight);
+  }
+  
+  .text-nippon-platinum-gray {
+    color: var(--nippon-platinum-gray);
+  }
+  
+  .text-nippon-pearl {
+    color: var(--nippon-pearl);
+  }
+  
+  .text-nippon-champagne {
+    color: var(--nippon-champagne);
+  }
+  
+  .text-nippon-platinum-white {
+    color: var(--nippon-platinum-white);
+  }
+  
+  .text-nippon-pure-gold {
+    color: var(--nippon-pure-gold);
+  }
+  
+  .text-nippon-rose-gold {
+    color: var(--nippon-rose-gold);
+  }
+  
+  .text-nippon-copper-gold {
+    color: var(--nippon-copper-gold);
+  }
+  
+  .text-nippon-platinum {
+    color: var(--nippon-platinum);
+  }
+}
+
+/* Enhanced Scroll & Animation System */
+@layer components {
+  .smooth-scroll-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Enhanced scroll reveal animations */
+  [data-scroll-reveal] {
+    opacity: 0;
+    transform: translateY(30px) scale(0.99);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  
+  [data-scroll-reveal].revealed {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
+  /* Parallax elements */
+  [data-scroll-parallax] {
+    will-change: transform;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+
+  /* Black gold warm white luxury animations */
+  @keyframes cinematic-entrance {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes luxury-fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes gold-glow {
+    0%, 100% {
+      box-shadow: 0 2px 12px rgba(212, 175, 55, 0.25);
+    }
+    50% {
+      box-shadow: 0 4px 24px rgba(212, 175, 55, 0.4);
+    }
+  }
+  
+  @keyframes black-glow {
+    0%, 100% {
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+  @keyframes form-focus-glow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+  }
+  
+  /* Animation classes */
+  .cinematic-entrance {
+    animation: cinematic-entrance 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  .luxury-fade-up {
+    animation: luxury-fade-up 0.6s ease-out forwards;
+  }
+  
+  .gold-glow {
+    animation: gold-glow 4s ease-in-out infinite;
+  }
+  
+  .black-glow {
+    animation: black-glow 4s ease-in-out infinite;
+  }
+  
+  /* Enhanced form styling */
+  .form-input-focus {
+    animation: form-focus-glow 0.6s ease-out;
+  }
+  
+  /* 60-30-10 Luxury button styling */
+  .luxury-button-gold {
+    padding: 0.875rem 2.5rem;
+    border: 2px solid var(--nippon-gold);
+    background: transparent;
+    color: var(--nippon-gold);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .luxury-button-gold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: left 0.5s;
+  }
+  
+  .luxury-button-gold:hover::before {
+    left: 100%;
+  }
+  
+  .luxury-button-gold:hover {
+    background: var(--nippon-gold);
+    color: var(--nippon-black);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+  }
+  
+  /* Enhanced form field styling - 60-30-10 */
+  .luxury-input {
+    background: rgba(250, 249, 245, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: var(--nippon-black);
+    padding: 0.875rem 1rem;
+    border-radius: 0;
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .luxury-input:focus {
+    border-color: var(--nippon-gold);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+    background: var(--nippon-warm-white-light);
+    outline: none;
+  }
+  
+  .luxury-input::placeholder {
+    color: var(--nippon-gray);
+  }
+  
+  /* Enhanced checkbox styling - 60-30-10 */
+  .luxury-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid var(--nippon-gray);
+    border-radius: 0;
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .luxury-checkbox:checked {
+    background: var(--nippon-gold);
+    border-color: var(--nippon-gold);
+  }
+  
+  .luxury-checkbox:focus {
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+  }
+  
+  /* Performance optimizations */
+  img, video {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  [data-scroll-reveal] {
+    transform: translateY(20px);
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  /* Mobile form adjustments */
+  .luxury-input {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Responsive typography adjustments */
+  h1 {
+    font-size: var(--text-4xl) !important;
+  }
+  
+  h2 {
+    font-size: var(--text-3xl) !important;
+  }
+  
+  h3 {
+    font-size: var(--text-2xl) !important;
+  }
+}
+
+/* Enhanced mobile experience */
+@media (max-width: 640px) {
+  .text-luxury-6xl,
+  .text-luxury-7xl,
+  .text-luxury-8xl {
+    font-size: var(--text-4xl) !important;
+  }
+  
+  .text-luxury-5xl {
+    font-size: var(--text-3xl) !important;
+  }
+  
+  .text-luxury-4xl {
+    font-size: var(--text-2xl) !important;
+  }
+  
+  .text-luxury-3xl {
+    font-size: var(--text-xl) !important;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  [data-scroll-reveal], [data-scroll-parallax], [data-scroll-fade], [data-scroll-scale], [data-scroll-rotate] {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+  
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .text-nippon-gray-light {
+    color: var(--nippon-warm-white);
+  }
+  
+  .luxury-input {
+    border-width: 2px;
+  }
+  
+  .luxury-button-gold {
+    border-width: 2px;
+  }
+}
