@@ -1,0 +1,40 @@
+import SmoothScroll from './components/SmoothScroll';
+import Navigation from './components/Navigation';
+import TextureBackground from './components/TextureBackground';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import Essence  from './components/Essence';
+import TestimonialsShowcase from './components/TestimonialsShowcase';
+import HowItWorks  from './components/HowItWorks';
+import ContactCTA from './components/ContactCTA';
+import Footer  from './components/Footer';
+
+export default function ImperialStoryPage() {
+  return (
+    <div className="min-h-screen bg-nippon-black relative">
+      <TextureBackground />
+      <Navigation />
+      <SmoothScroll>
+        <div id="story">
+          <Hero />
+        </div>
+        <div id="services">
+          <Services />
+        </div>
+        <div id="essence">
+          <Essence />
+        </div>
+        <div id="testimonials">
+          <TestimonialsShowcase />
+        </div>
+        <div id="process">
+          <HowItWorks />
+        </div>
+        <div id="contact">
+          <ContactCTA />
+        </div>
+        <Footer />
+      </SmoothScroll>
+    </div>
+  );
+}

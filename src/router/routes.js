@@ -1,6 +1,6 @@
 const ROUTES = {
     HOME: "/",
-    // HISTORY: "/imperial-story",
+    STORY: "/imperial-story",
     CONCIERGE: "/concierge",
     // TOURS: "/signature-tours",
     // PAYMENT_INTENT: "/payment-intent/:requestId",
