@@ -4,8 +4,9 @@ import ROUTES from "./routes";
 
 // Imported pages
 import Home from "../pages/home/Home";
-import Concierge from "../pages/concierge/ConciergePage";
+import ConciergePage from "../pages/concierge/ConciergePage";
 import ImperialStoryPage from "../pages/imperialStory/ImperialStoryPage";
+import LuxuryTransportPage from "../pages/luxuryTransport/LuxuryTransportPage";
 
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
@@ -16,7 +17,11 @@ const MainRouter = () => {
   return (
     <Routes>
       <Route path={ROUTES.HOME} element={<Home />} />
-      <Route path={ROUTES.CONCIERGE} element={<Concierge />} />
+
+      {/* Concierge */}
+      <Route path={ROUTES.CONCIERGE} element={<ConciergePage />} />
+      <Route path={ROUTES.LUXURY} element={<LuxuryTransportPage />} />
+
       <Route path={ROUTES.STORY} element={<ImperialStoryPage />} />
     </Routes>
   );
