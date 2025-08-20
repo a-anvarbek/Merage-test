@@ -11,129 +11,90 @@ import {
   Star,
   Award,
   Clock,
-  Leaf,
-  Heart,
 } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import consultationImage from "../assets/Hotel.png";
-import guideImage from "../assets/User.png";
-import luxuryCarImage from "../assets/car.png";
-import conciergeWelcomeImage from "../assets/Concierge Services Leviticus Lifestyle.jpg";
-import { useNavigate } from "react-router";
-import ROUTES from "../../../router/routes";
+import consultationImage from "figma:asset/e654dcd247d0b6bca931259a67b2c604ee0ad2aa.png";
+import guideImage from "figma:asset/ac87db3b62b60e6f679a297949b3130f64b8384b.png";
+import luxuryCarImage from "figma:asset/bbf3cb046228cd4944c5a70eaaf77e4c846fc311.png";
+import dayEscapeImage from "figma:asset/f7797fdb3ea663fe5713c9244846f0ccc7e9b267.png";
 
-export default function Concierge() {
-  const navigate = useNavigate();
+export function Concierge() {
   const services = [
     {
       icon: MapPin,
       title: "Luxury Accommodations",
-      subtitle: "Ryokan & Premium Hotels",
       description:
-        "Exceptional stays in Japan's finest traditional ryokan and contemporary luxury hotels, each selected for their unparalleled service and cultural authenticity.",
+        "Ryokan and hidden retreats, aligned precisely with your rhythm and privacy.",
       image:
-        "https://images.unsplash.com/photo-1706058358041-19f10e95a89a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBKYXBhbmVzZSUyMHJ5b2thbiUyMGludGVyaW9yJTIwdHJhZGl0aW9uYWx8ZW58MXx8fHwxNzU1MjQ4Mzk2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "https://images.unsplash.com/photo-1706058358041-19f10e95a89a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       cta: "Book Your Stay",
-      culturalNote: "Omotenashi hospitality awaits",
-      route: null,
     },
     {
       icon: Crown,
       title: "Fine Dining Reservations",
-      subtitle: "Michelin Stars & Hidden Gems",
       description:
-        "Exclusive access to Japan's most coveted restaurants, from intimate sushi counters to centuries-old kaiseki masters and innovative culinary artists.",
+        "Michelin-level kaiseki and intimate bars curated to your palate and occasion.",
       image:
-        "https://images.unsplash.com/photo-1678129456271-f37da2c63e56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBKYXBhbmVzZSUyMHNha2UlMjB0YXN0aW5nJTIwcHJpdmF0ZXxlbnwxfHx8fDE3NTUyNDg0MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "https://images.unsplash.com/photo-1678129456271-f37da2c63e56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       cta: "Reserve Your Table",
-      culturalNote: "Seasonal omakase experiences",
-      route: null,
     },
     {
       icon: Car,
       title: "Private Transportation",
-      subtitle: "Chauffeur & Luxury Vehicles",
       description:
-        "Premium chauffeur services in luxury vehicles with English-speaking drivers, ensuring seamless travel between cities and destinations throughout Japan.",
-      image: luxuryCarImage,
+        "Minivans and luxury transfers arranged at any time, ensuring your journey is as comfortable as your destination.",
+      image: "/assets/car.png", // local image bo‘lsa shu yerga to‘g‘ri path yozing
       cta: "Arrange Transport",
-      culturalNote: "Tokyo to Kyoto in comfort",
-      route: `${ROUTES.LUXURY}`,
     },
     {
       icon: Calendar,
       title: "Curated Day Experiences",
-      subtitle: "Cultural Tours & Seasonal Activities",
-      description:
-        "Thoughtfully designed day tours and seasonal experiences, from cherry blossom ceremonies to private temple visits, timed to Japan's natural rhythms.",
-      image:
-        "https://images.unsplash.com/photo-1705990775020-ec23afbba2e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxKYXBhbmVzZSUyMGdhcmRlbiUyMHplbiUyMHRlbXBsZSUyMGx1eHVyeXxlbnwxfHx8fDE3NTUyNDg0MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      description: "With every logistic handled discreetly.",
+      image: "/assets/day.png",
       cta: "Plan Your Experience",
-      culturalNote: "Seasonal beauty & traditions",
-      route: null,
     },
     {
       icon: Sparkles,
       title: "Exclusive Experiences",
-      subtitle: "Private Access & VIP Services",
       description:
-        "Once-in-a-lifetime experiences including private Mount Fuji helicopter tours, exclusive tea ceremonies with grand masters, and VIP cultural encounters.",
+        "Helicopters and serene spa escapes arranged around your moments, reflecting the height of exclusivity and possibility.",
       image:
-        "https://images.unsplash.com/photo-1495554698253-681539e9ea84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNb250JTIwRnVqaSUyMGx1eHVyeSUyMHZpZXclMjBoZWxpY29wdGVyJTIwcHJpdmF0ZXxlbnwxfHx8fDE3NTUyNDg0MTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "https://images.unsplash.com/photo-1495554698253-681539e9ea84?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       cta: "Create Your Moment",
-      culturalNote: "Unforgettable encounters",
-      route: null,
     },
     {
       icon: Users,
       title: "Private Tour Guides",
-      subtitle: "Expert Cultural Specialists",
       description:
-        "Licensed private guides fluent in your language and passionate about Japanese culture, providing insider access and deep cultural insights throughout your journey.",
-      image: guideImage,
+        "Unlocking Japan's stories through personal connections and insider access.",
+      image: "/assets/guide.png",
       cta: "Meet Your Guide",
-      culturalNote: "Cultural fluency guaranteed",
-      route: null,
     },
   ];
 
-  // Enhanced flagship service with more depth and authenticity
+  // Flagship service - positioned as the premium centerpiece
   const flagshipService = {
     icon: Compass,
     title: "Complete Journey Planning",
     subtitle: "Bespoke Travel Consultation",
-    description:
-      "Comprehensive travel planning service where our Japan specialists create your perfect itinerary through detailed consultation and cultural expertise.",
+    description: "Interests and pace—one conversation, endless possibilities.",
     expandedDescription:
-      "Our certified Japan travel specialists work closely with you to design a completely personalized itinerary that matches your interests, pace, and travel style. From cultural immersion to luxury relaxation, we handle every detail while ensuring authentic Japanese experiences throughout your journey.",
-    image: consultationImage,
-    philosophy:
-      "Like Japanese artisans who perfect their craft over generations, we approach your journey with the same dedication to excellence and attention to detail.",
+      "Our master consultants craft journeys that transcend ordinary travel. Each itinerary is meticulously designed to reflect your personal vision of Japan, whether you seek the tranquility of temple gardens, the thrill of exclusive access, or the perfect balance of both.",
+    image:
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80", // yoki local asset
     features: [
-      "Private consultation with certified Japan travel specialists",
-      "Completely customized multi-city travel itinerary",
-      "24/7 dedicated support throughout your entire trip",
-      "Exclusive access to our network of premium partners",
-      "Pre-travel cultural briefing and practical guidance",
-      "Real-time itinerary adjustments based on your preferences",
+      "Completely personalized multi-day itineraries",
+      "24/7 support throughout your entire journey",
+      "Access to all our exclusive services and partnerships",
+      "Pre-arrival briefing and cultural preparation",
+      "Real-time adjustments based on your preferences",
     ],
     cta: "Start Planning Your Journey",
-    stats: {
-      journeys: "800+",
-      support: "24/7",
-      experience: "18+",
-    },
   };
 
-  const handleServiceDiscover = (service) => {
-    if (service.route) {
-      navigate(service.route);
-    } else {
-      document
-        .getElementById("contact")
-        ?.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleServiceDiscover = (serviceTitle) => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToServices = () => {
@@ -144,76 +105,104 @@ export default function Concierge() {
 
   return (
     <div className="relative">
-      {/* Hero Section - Luxury Concierge Welcome Background */}
+      {/* Hero Section - Luxury Video Background */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Main Concierge Welcome Background */}
+        {/* Luxury Cinematic Background */}
         <div className="absolute inset-0 z-0">
+          {/* Primary night cityscape */}
           <div
             className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url(${conciergeWelcomeImage})`,
-              filter: "brightness(0.85) contrast(1.1) saturate(1.05)",
+              backgroundImage: `url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')`,
+              filter: "contrast(1.15) saturate(1.1)",
               animation: "cinematicZoom 20s ease-in-out infinite alternate",
             }}
           ></div>
 
-          {/* Subtle luxury enhancement layer */}
+          {/* Luxury car layer */}
           <div
-            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-15"
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-25"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')`,
-              filter: "brightness(0.4) blur(1px)",
-              animation:
-                "cinematicFloat 25s ease-in-out infinite alternate-reverse",
+              backgroundImage: `url('https://images.unsplash.com/photo-1549399084-d56fc997d7b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')`,
+              filter: "blur(1px)",
+              animation: "cinematicFloat 25s ease-in-out infinite alternate",
             }}
           ></div>
 
-          {/* Elegant gold light accent */}
+          {/* Tokyo night neon */}
+          <div
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-15"
+            style={{
+              backgroundImage: `url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')`,
+              filter: "blur(2px)",
+              animation: "cinematicFloat 30s ease-in-out infinite alternate",
+            }}
+          ></div>
+
+          {/* Dynamic light streaks */}
+          <div
+            className="absolute inset-0 w-full h-full opacity-12"
+            style={{
+              background:
+                "linear-gradient(45deg, transparent 20%, rgba(212, 175, 55, 0.08) 40%, transparent 60%)",
+              animation: "gradientMove 40s linear infinite",
+            }}
+          ></div>
+
+          {/* Hotel ambiance overlay */}
+          <div
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-20"
+            style={{
+              backgroundImage: `url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')`,
+              filter: "contrast(1.1)",
+              animation:
+                "cinematicZoom 25s ease-in-out infinite alternate-reverse",
+            }}
+          ></div>
+
+          {/* Subtle gold gradient */}
           <div
             className="absolute inset-0 w-full h-full opacity-8"
             style={{
               background:
-                "radial-gradient(circle at 60% 40%, rgba(212, 175, 55, 0.12) 0%, transparent 60%)",
-              animation: "gradientMove 30s ease-in-out infinite",
+                "radial-gradient(circle at 30% 40%, rgba(212, 175, 55, 0.15) 0%, transparent 60%)",
+              animation: "gradientMove 35s ease-in-out infinite",
             }}
           ></div>
         </div>
 
-        {/* Professional overlays for perfect readability */}
-        <div className="absolute inset-0 bg-nippon-black/40 z-10"></div>
+        {/* Overlays */}
+        <div className="absolute inset-0 bg-nippon-black/65 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-nippon-black/60 via-nippon-black/45 to-nippon-black/75 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-nippon-black/55 via-transparent to-nippon-black/35 z-10"></div>
 
-        {/* Elegant gradient overlays for content area */}
-        <div className="absolute inset-0 bg-gradient-to-b from-nippon-black/50 via-nippon-black/30 to-nippon-black/60 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-nippon-black/45 via-transparent to-nippon-black/25 z-10"></div>
-
-        {/* Luxury gold accent elements */}
+        {/* Gold accent */}
         <div
-          className="absolute top-1/4 right-1/4 w-80 h-80 rounded-full bg-nippon-gold opacity-4 blur-3xl z-10"
+          className="absolute top-1/4 right-1/4 w-80 h-80 rounded-full bg-nippon-gold opacity-5 blur-3xl z-10"
           data-scroll-parallax
           data-scroll-speed="0.1"
         ></div>
         <div
-          className="absolute bottom-1/3 left-1/4 w-96 h-96 rounded-full bg-nippon-gold opacity-2 blur-3xl z-10"
+          className="absolute bottom-1/3 left-1/4 w-96 h-96 rounded-full bg-nippon-gold opacity-3 blur-3xl z-10"
           data-scroll-parallax
           data-scroll-speed="-0.05"
         ></div>
 
-        {/* Subtle texture overlay for luxury feel */}
+        {/* Noise texture */}
         <div
-          className="absolute inset-0 opacity-3 z-10"
+          className="absolute inset-0 opacity-4 z-10"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='1' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.3'/%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' ... %3C/svg%3E")`,
             backgroundSize: "100px 100px",
           }}
         ></div>
 
-        {/* Content - Streamlined and Concise */}
+        {/* Content */}
         <div
           className="relative z-20 max-w-6xl mx-auto px-8"
           data-scroll-reveal
         >
           <div className="max-w-4xl">
-            {/* Main headline - shortened and more impactful */}
             <h1
               className="text-luxury-7xl lg:text-luxury-8xl text-nippon-warm-white font-serif mb-16 leading-none tracking-tight"
               style={{
@@ -224,10 +213,8 @@ export default function Concierge() {
               Your life, seamlessly arranged.
             </h1>
 
-            {/* Gold divider */}
             <div className="h-px w-48 mb-16 bg-gradient-to-r from-transparent via-nippon-gold to-transparent shadow-gold"></div>
 
-            {/* Streamlined intro - much shorter, more breathing room */}
             <div className="text-left space-y-12 max-w-3xl">
               <p
                 className="text-luxury-2xl text-nippon-warm-white font-serif italic leading-relaxed"
@@ -251,7 +238,6 @@ export default function Concierge() {
               </p>
             </div>
 
-            {/* CTA button */}
             <div className="mt-20">
               <Button
                 onClick={scrollToServices}
@@ -286,18 +272,18 @@ export default function Concierge() {
             className="w-full h-full"
             style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-              backgroundSize: "60px 60px",
+              backgroundSize,
             }}
           ></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto content-padding">
-          {/* Core Services Grid - Enhanced with cultural authenticity */}
+          {/* Core Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group relative bg-nippon-white shadow-luxury hover:shadow-luxury-hover transition-all duration-500 overflow-hidden border-l-4 border-nippon-gold"
+                className="group relative bg-nippon-white shadow-luxury hover:shadow-luxury-hover transition-all duration-500 overflow-hidden"
                 data-scroll-reveal
                 style={{ animationDelay: `${index * 150}ms` }}
               >
@@ -305,55 +291,38 @@ export default function Concierge() {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <ImageWithFallback
                     src={service.image}
-                    alt={`${service.title} - ${service.subtitle}`}
+                    alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
-                  {/* Refined tint overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-nippon-black/40 via-nippon-black/10 to-transparent group-hover:from-nippon-black/30 transition-colors duration-500"></div>
+                  {/* Dark tint overlay */}
+                  <div className="absolute inset-0 bg-nippon-black/30 group-hover:bg-nippon-black/20 transition-colors duration-500"></div>
 
-                  {/* Gold framed icon with enhanced styling */}
+                  {/* Gold framed icon */}
                   <div className="absolute top-6 right-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-nippon-gold to-nippon-gold-dark backdrop-blur-sm flex items-center justify-center shadow-gold border-2 border-nippon-gold-light rounded-sm">
-                      <service.icon className="w-8 h-8 text-nippon-black" />
-                    </div>
-                  </div>
-
-                  {/* Cultural note badge */}
-                  <div className="absolute bottom-6 left-6">
-                    <div className="bg-nippon-black/80 backdrop-blur-sm px-4 py-2 rounded-sm">
-                      <p className="text-nippon-gold font-sans text-luxury-xs italic">
-                        {service.culturalNote}
-                      </p>
+                    <div className="w-14 h-14 bg-nippon-gold/95 backdrop-blur-sm flex items-center justify-center shadow-gold border border-nippon-gold-dark">
+                      <service.icon className="w-7 h-7 text-nippon-black" />
                     </div>
                   </div>
                 </div>
 
-                {/* Enhanced Card Content */}
+                {/* Card Content */}
                 <div className="p-8 space-y-6">
-                  {/* Subtitle */}
-                  <div className="text-nippon-gold font-sans text-luxury-sm uppercase tracking-wider font-medium">
-                    {service.subtitle}
-                  </div>
-
                   {/* Title */}
-                  <h3 className="text-luxury-2xl text-nippon-black font-serif leading-tight mb-4">
+                  <h3 className="text-luxury-2xl text-nippon-black font-serif leading-tight">
                     {service.title}
                   </h3>
 
-                  {/* Enhanced Description */}
+                  {/* Description */}
                   <p className="text-luxury-base text-nippon-gray leading-relaxed font-sans">
                     {service.description}
                   </p>
 
-                  {/* Elegant divider */}
-                  <div className="h-px bg-gradient-to-r from-transparent via-nippon-gold/30 to-transparent my-6"></div>
-
-                  {/* Enhanced CTA Button */}
+                  {/* CTA Button */}
                   <div className="pt-4">
                     <Button
-                      onClick={() => handleServiceDiscover(service)}
-                      className="group/btn relative overflow-hidden w-full bg-transparent border border-nippon-gold text-nippon-gold hover:text-nippon-black font-sans text-luxury-sm px-6 py-4 transition-all duration-500 shadow-gold hover:shadow-gold-hover transform hover:-translate-y-2 hover:bg-nippon-gold luxury-button-gold"
+                      onClick={() => handleServiceDiscover(service.title)}
+                      className="group/btn relative overflow-hidden w-full bg-transparent border border-nippon-gold text-nippon-gold hover:text-nippon-black font-sans text-luxury-sm px-6 py-3 transition-all duration-500 shadow-gold hover:shadow-gold-hover transform hover:-translate-y-2 hover:bg-nippon-gold luxury-button-gold"
                     >
                       <span className="absolute inset-0 bg-nippon-gold transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-500 origin-left"></span>
                       <span className="relative flex items-center justify-center space-x-2">
@@ -472,7 +441,7 @@ export default function Concierge() {
               <div className="grid grid-cols-3 gap-8 py-8 border-t border-nippon-border">
                 <div className="text-center">
                   <div className="text-luxury-3xl text-nippon-gold font-serif mb-2">
-                    {flagshipService.stats.journeys}
+                    500+
                   </div>
                   <div className="text-nippon-gray font-sans text-luxury-sm">
                     Bespoke Journeys
@@ -480,7 +449,7 @@ export default function Concierge() {
                 </div>
                 <div className="text-center">
                   <div className="text-luxury-3xl text-nippon-gold font-serif mb-2">
-                    {flagshipService.stats.support}
+                    24/7
                   </div>
                   <div className="text-nippon-gray font-sans text-luxury-sm">
                     Dedicated Support
@@ -488,7 +457,7 @@ export default function Concierge() {
                 </div>
                 <div className="text-center">
                   <div className="text-luxury-3xl text-nippon-gold font-serif mb-2">
-                    {flagshipService.stats.experience}
+                    15+
                   </div>
                   <div className="text-nippon-gray font-sans text-luxury-sm">
                     Years Experience
