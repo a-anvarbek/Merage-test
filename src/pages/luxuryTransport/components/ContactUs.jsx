@@ -19,16 +19,15 @@ export function ContactUs() {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleInputChange = (field: string, value: string | boolean) => {
+  const handleInputChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     setIsSubmitted(true);
     
-    // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
@@ -275,7 +274,7 @@ export function ContactUs() {
                     <Checkbox
                       id="contactPhone"
                       checked={formData.contactViaPhone}
-                      onCheckedChange={(checked) => handleInputChange('contactViaPhone', checked as boolean)}
+                      onCheckedChange={(checked) => handleInputChange("contactViaPhone", !!checked)}
                       className="luxury-checkbox"
                     />
                     <label htmlFor="contactPhone" className="text-nippon-black font-sans text-luxury-lg">
