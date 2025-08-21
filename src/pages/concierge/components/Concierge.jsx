@@ -36,7 +36,7 @@ export default function Concierge() {
         "https://images.unsplash.com/photo-1706058358041-19f10e95a89a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBKYXBhbmVzZSUyMHJ5b2thbiUyMGludGVyaW9yJTIwdHJhZGl0aW9uYWx8ZW58MXx8fHwxNzU1MjQ4Mzk2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       cta: "Book Your Stay",
       culturalNote: "Omotenashi hospitality awaits",
-      route: null,
+      route: `${ROUTES.ACCOMMODATION}`,
     },
     {
       icon: Crown,
