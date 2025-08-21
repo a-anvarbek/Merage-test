@@ -6,6 +6,9 @@ const ROUTES = {
   // Concierge Services
   ACCOMMODATION: "/concierge/accommodation-reservations",
   LUXURY: "/concierge/luxury-transportation",
+
+  // Services
+  PRIVATE: "/private-chauffeur",
   // PAYMENT_INTENT: "/payment-intent/:requestId",
   // PAYMENT_CANCELED: "/payment-canceled",
   // PAYMENT_SUCCESS: "/payment-success",

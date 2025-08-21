@@ -2,4 +2,10 @@
 @import "./pages/concierge/styles/globals.css";
 @import "./pages/home/styles/globals.css";
 @import "./pages/imperialStory/styles/globals.css";
+
+/* Concierge Services */
+@import "./pages/conciergeServices/accommodationReservations/styles/globals.css";
 @import "./pages/conciergeServices/luxuryTransport/styles/globals.css";
+
+/* Services */
+@import "./pages/Services/serviceAndPrivateChauffeur/styles/globals.css";
