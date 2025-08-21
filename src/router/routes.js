@@ -6,6 +6,7 @@ const ROUTES = {
   // Concierge Services
   ACCOMMODATION: "/concierge/accommodation-reservations",
   LUXURY: "/concierge/luxury-transportation",
+  EXCLUSIVE: "/concierge/exclusive-experience",
 
   // Services
   PRIVATE: "/private-chauffeur",

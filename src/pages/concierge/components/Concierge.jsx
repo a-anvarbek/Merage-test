@@ -83,7 +83,7 @@ export default function Concierge() {
         "https://images.unsplash.com/photo-1495554698253-681539e9ea84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNb250JTIwRnVqaSUyMGx1eHVyeSUyMHZpZXclMjBoZWxpY29wdGVyJTIwcHJpdmF0ZXxlbnwxfHx8fDE3NTUyNDg0MTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       cta: "Create Your Moment",
       culturalNote: "Unforgettable encounters",
-      route: null,
+      route: `${ROUTES.EXCLUSIVE}`,
     },
     {
       icon: Users,
