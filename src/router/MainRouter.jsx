@@ -12,7 +12,8 @@ import ImperialStoryPage from "../pages/imperialStory/ImperialStoryPage";
 import LuxuryTransportPage from "../pages/conciergeServices/luxuryTransport/LuxuryTransportPage";
 import AccommodationReservationsPage from "../pages/conciergeServices/accommodationReservations/AccommodationReservationsPage";
 import PrivateChauffeurPage from "../pages/Services/serviceAndPrivateChauffeur/PrivateChauffeurPage";
-import ExclusivePage from "../pages/conciergeServices/ExclusiveExperience/ExclusivePage";
+import ExclusivePage from "../pages/conciergeServices/exclusiveExperience/ExclusivePage";
+import CuratedDay from "../pages/conciergeServices/curatedDay/CuratedDay";
 
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
@@ -31,6 +32,7 @@ const MainRouter = () => {
       {/* Concierge Services */}
       <Route path={ROUTES.ACCOMMODATION} element={<AccommodationReservationsPage />} />
       <Route path={ROUTES.LUXURY} element={<LuxuryTransportPage />} />
+      <Route path={ROUTES.CURATED} element={<CuratedDay />} />
       <Route path={ROUTES.EXCLUSIVE} element={<ExclusivePage />} />
 
       {/* Services */}

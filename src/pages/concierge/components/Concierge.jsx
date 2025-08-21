@@ -71,7 +71,7 @@ export default function Concierge() {
         "https://images.unsplash.com/photo-1705990775020-ec23afbba2e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxKYXBhbmVzZSUyMGdhcmRlbiUyMHplbiUyMHRlbXBsZSUyMGx1eHVyeXxlbnwxfHx8fDE3NTUyNDg0MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       cta: "Plan Your Experience",
       culturalNote: "Seasonal beauty & traditions",
-      route: null,
+      route: `${ROUTES.CURATED}`,
     },
     {
       icon: Sparkles,
