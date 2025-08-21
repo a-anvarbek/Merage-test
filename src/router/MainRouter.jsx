@@ -11,6 +11,7 @@ import ImperialStoryPage from "../pages/imperialStory/ImperialStoryPage";
 // Concierge Services
 import LuxuryTransportPage from "../pages/conciergeServices/luxuryTransport/LuxuryTransportPage";
 import AccommodationReservationsPage from "../pages/conciergeServices/accommodationReservations/AccommodationReservationsPage";
+import PrivateChauffeurPage from "../pages/Services/serviceAndPrivateChauffeur/PrivateChauffeurPage";
 
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
@@ -29,6 +30,9 @@ const MainRouter = () => {
       {/* Concierge Services */}
       <Route path={ROUTES.ACCOMMODATION} element={<AccommodationReservationsPage />} />
       <Route path={ROUTES.LUXURY} element={<LuxuryTransportPage />} />
+
+      {/* Services */}
+      <Route path={ROUTES.PRIVATE} element={<PrivateChauffeurPage />} />
     </Routes>
   );
 };
