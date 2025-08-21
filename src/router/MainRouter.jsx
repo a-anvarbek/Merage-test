@@ -1,3 +1,4 @@
+// Libraries
 import { Route, Routes } from "react-router";
 
 import ROUTES from "./routes";
@@ -6,7 +7,10 @@ import ROUTES from "./routes";
 import Home from "../pages/home/Home";
 import ConciergePage from "../pages/concierge/ConciergePage";
 import ImperialStoryPage from "../pages/imperialStory/ImperialStoryPage";
-import LuxuryTransportPage from "../pages/luxuryTransport/LuxuryTransportPage";
+
+// Concierge Services
+import LuxuryTransportPage from "../pages/conciergeServices/luxuryTransport/LuxuryTransportPage";
+import AccommodationReservationsPage from "../pages/conciergeServices/accommodationReservations/AccommodationReservationsPage";
 
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
@@ -17,12 +21,14 @@ const MainRouter = () => {
   return (
     <Routes>
       <Route path={ROUTES.HOME} element={<Home />} />
+      <Route path={ROUTES.STORY} element={<ImperialStoryPage />} />
 
       {/* Concierge */}
       <Route path={ROUTES.CONCIERGE} element={<ConciergePage />} />
-      <Route path={ROUTES.LUXURY} element={<LuxuryTransportPage />} />
 
-      <Route path={ROUTES.STORY} element={<ImperialStoryPage />} />
+      {/* Concierge Services */}
+      <Route path={ROUTES.ACCOMMODATION} element={<AccommodationReservationsPage />} />
+      <Route path={ROUTES.LUXURY} element={<LuxuryTransportPage />} />
     </Routes>
   );
 };
