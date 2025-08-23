@@ -1,7 +1,9 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function ScrollReveal({ children }) {
   const observerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false); // useState import qilindi
+  const elementRef = useRef(null);
 
   useEffect(() => {
     // Create intersection observer for scroll reveal animations
@@ -11,15 +13,13 @@ export default function ScrollReveal({ children }) {
           if (entry.isIntersecting) {
             entry.target.classList.add('revealed');
             // Unobserve the element once it's been revealed
-            if (observerRef.current) {
-              observerRef.current.unobserve(entry.target);
-            }
+            observerRef.current?.unobserve(entry.target);
           }
         });
       },
       {
         threshold: 0.1,
-        rootMargin: '50px 0px -50px 0px'
+        rootMargin: '50px 0px -50px 0px',
       }
     );
 
@@ -33,7 +33,7 @@ export default function ScrollReveal({ children }) {
 
     // Handle parallax elements
     const parallaxElements = document.querySelectorAll('[data-scroll-parallax]');
-    
+
     const handleScroll = () => {
       const scrolled = window.pageYOffset;
 

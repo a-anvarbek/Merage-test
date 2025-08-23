@@ -17,6 +17,7 @@ import CuratedDay from "../pages/conciergeServices/curatedDay/CuratedDay";
 // Services
 import PrivateChauffeurPage from "../pages/services/serviceAndPrivateChauffeur/PrivateChauffeurPage";
 import MtFujiEscapePage from "../pages/services/mtFujiEscape/MtFujiEscapePage";
+import SignatureMultiDayToursPage from "../pages/services/signatureMultiDayTours/SignatureMultiDayToursPage";
 
 
 // // Payments
@@ -42,6 +43,7 @@ const MainRouter = () => {
       {/* Services */}
       <Route path={ROUTES.PRIVATE} element={<PrivateChauffeurPage />} />
       <Route path={ROUTES.ESCAPE} element={<MtFujiEscapePage />} />
+      <Route path={ROUTES.SIGNATURE_TOURS} element={<SignatureMultiDayToursPage />} />
     </Routes>
   );
 };

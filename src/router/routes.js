@@ -12,6 +12,8 @@ const ROUTES = {
   // Services
   PRIVATE: "/private-chauffeur",
   ESCAPE: "/mt-fuji-escape",
+  SIGNATURE_TOURS: "/signature-multi-day-tours",
+
   // PAYMENT_INTENT: "/payment-intent/:requestId",
   // PAYMENT_CANCELED: "/payment-canceled",
   // PAYMENT_SUCCESS: "/payment-success",
