@@ -19,7 +19,7 @@ import PrivateChauffeurPage from "../pages/services/serviceAndPrivateChauffeur/P
 import MtFujiEscapePage from "../pages/services/mtFujiEscape/MtFujiEscapePage";
 import SignatureMultiDayToursPage from "../pages/services/signatureMultiDayTours/SignatureMultiDayToursPage";
 import KamakuraHeritageTripPage from "../pages/services/kamakuraHeritageDayTrip/KamakuraHeritageTripPage";
-
+import TokyoCity from "../pages/services/tokyo/TokyoCity";
 
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
@@ -36,7 +36,10 @@ const MainRouter = () => {
       <Route path={ROUTES.CONCIERGE} element={<ConciergePage />} />
 
       {/* Concierge Services */}
-      <Route path={ROUTES.ACCOMMODATION} element={<AccommodationReservationsPage />} />
+      <Route
+        path={ROUTES.ACCOMMODATION}
+        element={<AccommodationReservationsPage />}
+      />
       <Route path={ROUTES.LUXURY} element={<LuxuryTransportPage />} />
       <Route path={ROUTES.CURATED} element={<CuratedDay />} />
       <Route path={ROUTES.EXCLUSIVE} element={<ExclusivePage />} />
@@ -44,8 +47,12 @@ const MainRouter = () => {
       {/* Services */}
       <Route path={ROUTES.PRIVATE} element={<PrivateChauffeurPage />} />
       <Route path={ROUTES.ESCAPE} element={<MtFujiEscapePage />} />
-      <Route path={ROUTES.SIGNATURE_TOURS} element={<SignatureMultiDayToursPage />} />
+      <Route
+        path={ROUTES.SIGNATURE_TOURS}
+        element={<SignatureMultiDayToursPage />}
+      />
       <Route path={ROUTES.KAMAKURA} element={<KamakuraHeritageTripPage />} />
+      <Route path={ROUTES.TOKYO} element={<TokyoCity />} />
     </Routes>
   );
 };
