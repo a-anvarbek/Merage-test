@@ -9,4 +9,5 @@
 @import "./pages/conciergeServices/exclusiveExperience/styles/globals.css";
 
 /* Services */
-@import "./pages/Services/serviceAndPrivateChauffeur/styles/globals.css";
+@import "./pages/services/serviceAndPrivateChauffeur/styles/globals.css";
+@import "./pages/services/mtFujiEscape/styles/globals.css";

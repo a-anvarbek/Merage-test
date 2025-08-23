@@ -11,9 +11,13 @@ import ImperialStoryPage from "../pages/imperialStory/ImperialStoryPage";
 // Concierge Services
 import LuxuryTransportPage from "../pages/conciergeServices/luxuryTransport/LuxuryTransportPage";
 import AccommodationReservationsPage from "../pages/conciergeServices/accommodationReservations/AccommodationReservationsPage";
-import PrivateChauffeurPage from "../pages/Services/serviceAndPrivateChauffeur/PrivateChauffeurPage";
 import ExclusivePage from "../pages/conciergeServices/exclusiveExperience/ExclusivePage";
 import CuratedDay from "../pages/conciergeServices/curatedDay/CuratedDay";
+
+// Services
+import PrivateChauffeurPage from "../pages/services/serviceAndPrivateChauffeur/PrivateChauffeurPage";
+import MtFujiEscapePage from "../pages/services/mtFujiEscape/MtFujiEscapePage";
+
 
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
@@ -37,6 +41,7 @@ const MainRouter = () => {
 
       {/* Services */}
       <Route path={ROUTES.PRIVATE} element={<PrivateChauffeurPage />} />
+      <Route path={ROUTES.ESCAPE} element={<MtFujiEscapePage />} />
     </Routes>
   );
 };
