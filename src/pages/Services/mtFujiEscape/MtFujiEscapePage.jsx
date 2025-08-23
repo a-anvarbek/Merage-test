@@ -1,10 +1,7 @@
-// App.jsx
-
-import React from "react";
-import { SmoothScroll } from "./components/SmoothScroll";
-import { ScrollReveal } from "./components/ScrollReveal";
-import { MtFujiEscape } from "./components/MtFujiEscape";
-import { Footer } from "./components/Footer";
+import SmoothScroll from "./components/SmoothScroll";
+import ScrollReveal from "./components/ScrollReveal";
+import MtFujiEscape from "./components/MtFujiEscape";
+import Footer from "./components/Footer";
 
 export default function MtFujiEscapePage() {
   return (

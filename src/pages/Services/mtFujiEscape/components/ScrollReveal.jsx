@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export function ScrollReveal({ children }) {
+export default function ScrollReveal({ children }) {
   const observerRef = useRef(null);
 
   useEffect(() => {
