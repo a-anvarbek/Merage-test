@@ -62,7 +62,7 @@ import hiaceImage from "../assets/car4.png";
 
 // --------------------------------------------------------
 
-export default function MtFujiEscape() {
+export function MtFujiEscape() {
   const [selectedVehicle, setSelectedVehicle] = useState(null);
   const [showBookingModal, setShowBookingModal] = useState(false);
   const [bookingStep, setBookingStep] = useState(1);

@@ -13,7 +13,7 @@ const ROUTES = {
   PRIVATE: "/private-chauffeur",
   ESCAPE: "/mt-fuji-escape",
   SIGNATURE_TOURS: "/signature-multi-day-tours",
-
+  KAMAKURA: "/kamakura-heritage-trip",
   // PAYMENT_INTENT: "/payment-intent/:requestId",
   // PAYMENT_CANCELED: "/payment-canceled",
   // PAYMENT_SUCCESS: "/payment-success",
