@@ -14,6 +14,7 @@ const ROUTES = {
   ESCAPE: "/mt-fuji-escape",
   SIGNATURE_TOURS: "/signature-multi-day-tours",
   KAMAKURA: "/kamakura-heritage-trip",
+  TOKYO: "/tokyo",
   // PAYMENT_INTENT: "/payment-intent/:requestId",
   // PAYMENT_CANCELED: "/payment-canceled",
   // PAYMENT_SUCCESS: "/payment-success",
