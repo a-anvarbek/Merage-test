@@ -43,9 +43,13 @@ export function Services() {
     experience: "18+"
   };
 
-  const handleServiceInquiry = (serviceTitle: string) => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  const handleServiceInquiry = (serviceTitle) => {
+    const el = document.getElementById("contact");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
   };
+  
 
   const scrollToServices = () => {
     document.getElementById('core-services')?.scrollIntoView({ behavior: 'smooth' });
