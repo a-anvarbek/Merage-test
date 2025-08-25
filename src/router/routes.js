@@ -2,6 +2,7 @@ const ROUTES = {
   HOME: "/",
   STORY: "/imperial-story",
   CONCIERGE: "/concierge",
+  SERVICES: "/services",
 
   // Concierge Services
   ACCOMMODATION: "/concierge/accommodation-reservations",
@@ -10,11 +11,10 @@ const ROUTES = {
   EXCLUSIVE: "/concierge/exclusive-experience",
 
   // Services
-  PRIVATE: "/private-chauffeur",
-  ESCAPE: "/mt-fuji-escape",
-  SIGNATURE_TOURS: "/signature-multi-day-tours",
-  KAMAKURA: "/kamakura-heritage-trip",
-  TOKYO: "/tokyo",
+  ESCAPE: "/services/mt-fuji-escape",
+  SIGNATURE_TOURS: "/services/signature-multi-day-tours",
+  KAMAKURA: "/services/kamakura-heritage-trip",
+  TOKYO: "/services/tokyo",
   // PAYMENT_INTENT: "/payment-intent/:requestId",
   // PAYMENT_CANCELED: "/payment-canceled",
   // PAYMENT_SUCCESS: "/payment-success",

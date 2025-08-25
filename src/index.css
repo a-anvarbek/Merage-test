@@ -2,6 +2,7 @@
 @import "./pages/concierge/styles/globals.css";
 @import "./pages/home/styles/globals.css";
 @import "./pages/imperialStory/styles/globals.css";
+@import "./pages/servicesPage/styles/globals.css";
 
 /* Concierge Services */
 @import "./pages/conciergeServices/accommodationReservations/styles/globals.css";
@@ -9,6 +10,5 @@
 @import "./pages/conciergeServices/exclusiveExperience/styles/globals.css";
 
 /* Services */
-@import "./pages/services/serviceAndPrivateChauffeur/styles/globals.css";
 @import "./pages/services/mtFujiEscape/styles/globals.css";
 @import "./pages/services/signatureMultiDayTours/styles/globals.css";

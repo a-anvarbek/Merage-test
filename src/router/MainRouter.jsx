@@ -15,7 +15,7 @@ import ExclusivePage from "../pages/conciergeServices/exclusiveExperience/Exclus
 import CuratedDay from "../pages/conciergeServices/curatedDay/CuratedDay";
 
 // Services
-import PrivateChauffeurPage from "../pages/services/serviceAndPrivateChauffeur/PrivateChauffeurPage";
+import PrivateChauffeurPage from "../pages/servicesPage/PrivateChauffeurPage";
 import MtFujiEscapePage from "../pages/services/mtFujiEscape/MtFujiEscapePage";
 import SignatureMultiDayToursPage from "../pages/services/signatureMultiDayTours/SignatureMultiDayToursPage";
 import KamakuraHeritageTripPage from "../pages/services/kamakuraHeritageDayTrip/KamakuraHeritageTripPage";
@@ -45,7 +45,9 @@ const MainRouter = () => {
       <Route path={ROUTES.EXCLUSIVE} element={<ExclusivePage />} />
 
       {/* Services */}
-      <Route path={ROUTES.PRIVATE} element={<PrivateChauffeurPage />} />
+      <Route path={ROUTES.SERVICES} element={<PrivateChauffeurPage />} />
+
+      {/*  */}
       <Route path={ROUTES.ESCAPE} element={<MtFujiEscapePage />} />
       <Route
         path={ROUTES.SIGNATURE_TOURS}

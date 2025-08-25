@@ -1,6 +1,6 @@
 import { MessageSquare, Calendar, Star, Crown } from 'lucide-react';
 
-export function HowItWorks() {
+export default function HowItWorks() {
   const steps = [
     {
       icon: MessageSquare,

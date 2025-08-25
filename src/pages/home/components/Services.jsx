@@ -5,7 +5,7 @@ const mercedesImage = "https://i.postimg.cc/CxJMSkYZ/c13215d9-8d12-4e94-8268-50b
 const mtFujiImage = "https://i.postimg.cc/FKZrFc4d/Car-2-1-1.jpg";
 const conciergeImage = "https://i.postimg.cc/s1dd4DzC/164620635076957708-sm.png";
 
-export function Services() {
+export default function Services() {
   const services = [
     {
       icon: Crown,

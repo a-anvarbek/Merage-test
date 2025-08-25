@@ -1,4 +1,4 @@
-export function SectionTransition() {
+export default function SectionTransition() {
   return (
     <div className="relative h-24 -mb-12">
       {/* Subtle transition gradient */}
