@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 import { ChevronDown, Play, Crown, ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
-export function Hero() {
+export default function Hero() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   useEffect(() => {

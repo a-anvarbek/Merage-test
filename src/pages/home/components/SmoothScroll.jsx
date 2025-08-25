@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export function SmoothScroll({ children }) {
+export default function SmoothScroll({ children }) {
   useEffect(() => {
     let ticking = false;
     let lastScrollY = 0;

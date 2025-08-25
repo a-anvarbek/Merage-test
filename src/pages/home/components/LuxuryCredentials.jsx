@@ -1,6 +1,6 @@
 import { Award, Shield, Users, Globe, Crown, Star } from 'lucide-react';
 
-export function LuxuryCredentials() {
+export default function LuxuryCredentials() {
   const credentials = [
     {
       icon: Award,

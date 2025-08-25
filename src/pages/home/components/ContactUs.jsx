@@ -7,7 +7,7 @@ import { Checkbox } from './ui/checkbox';
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Twitter, Send } from 'lucide-react';
 import { Footer } from './Footer';
 
-export function ContactUs() {
+export default function ContactUs() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',

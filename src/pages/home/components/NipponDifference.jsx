@@ -1,6 +1,6 @@
 import { Shield, Star, Clock, Users, Sparkles, Award } from 'lucide-react';
 
-export function NipponDifference() {
+export default function NipponDifference() {
   const differences = [
     {
       icon: Shield,

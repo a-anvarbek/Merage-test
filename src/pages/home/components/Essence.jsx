@@ -1,6 +1,6 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
-export function Essence() {
+export default function Essence() {
   return (
     <section className="relative bg-nippon-warm-white section-padding overflow-hidden">
       {/* Subtle background elements */}

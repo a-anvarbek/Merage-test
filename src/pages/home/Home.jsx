@@ -1,15 +1,15 @@
-import { SmoothScroll } from "./components/SmoothScroll";
-import { ScrollReveal } from "./components/ScrollReveal";
-import { Navigation } from "./components/Navigation";
-import { Hero } from "./components/Hero";
-import { LuxuryCredentials } from "./components/LuxuryCredentials";
-import { Services } from "./components/Services";
-import { SectionTransition } from "./components/SectionTransition";
-import { Essence } from "./components/Essence";
-import { NipponDifference } from "./components/NipponDifference";
-import { HowItWorks } from "./components/HowItWorks";
-import { ContactCTA } from "./components/ContactCTA";
-import { ContactUs } from "./components/ContactUs";
+import SmoothScroll from "./components/SmoothScroll";
+import ScrollReveal from "./components/ScrollReveal";
+import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
+import LuxuryCredentials from "./components/LuxuryCredentials";
+import Services from "./components/Services";
+import SectionTransition from "./components/SectionTransition";
+import Essence from "./components/Essence";
+import NipponDifference from "./components/NipponDifference";
+import HowItWorks from "./components/HowItWorks";
+import ContactCTA from "./components/ContactCTA";
+import ContactUs from "./components/ContactUs";
 
 export default function Home() {
   return (

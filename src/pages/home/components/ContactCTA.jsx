@@ -2,7 +2,7 @@ import { Button } from './ui/button';
 import { Phone, Mail, ArrowRight, Crown, Calendar, Shield, MessageSquare, Globe } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
-export function ContactCTA() {
+export default function ContactCTA() {
   const scrollToContact = () => {
     document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
   };

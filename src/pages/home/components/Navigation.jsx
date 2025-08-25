@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Menu, X, Phone } from 'lucide-react';
+import { useNavigate } from 'react-router';
 
-export function Navigation() {
+export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -46,7 +49,7 @@ export function Navigation() {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-12">
               <button 
-                onClick={() => scrollToSection('services')}
+                onClick={() => navigate("/services")}
                 className="text-nippon-warm-white hover:text-nippon-gold font-sans text-luxury-base font-medium tracking-wide transition-colors duration-300"
               >
                 Services
