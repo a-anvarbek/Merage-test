@@ -11,15 +11,14 @@ function AlertDialog(props) {
 
 function AlertDialogTrigger(props) {
   return (
-    <AlertDialogPrimitive.Trigger
-      data-slot="alert-dialog-trigger"
-      {...props}
-    />
+    <AlertDialogPrimitive.Trigger data-slot="alert-dialog-trigger" {...props} />
   );
 }
 
 function AlertDialogPortal(props) {
-  return <AlertDialogPrimitive.Portal data-slot="alert-dialog-portal" {...props} />;
+  return (
+    <AlertDialogPrimitive.Portal data-slot="alert-dialog-portal" {...props} />
+  );
 }
 
 function AlertDialogOverlay({ className, ...props }) {
