@@ -11,15 +11,15 @@ import ImperialStoryPage from "../pages/imperialStory/ImperialStoryPage";
 // Concierge Services
 import LuxuryTransportPage from "../pages/conciergeServices/luxuryTransport/LuxuryTransportPage";
 import AccommodationReservationsPage from "../pages/conciergeServices/accommodationReservations/AccommodationReservationsPage";
-import ExclusivePage from "../pages/conciergeServices/exclusiveExperience/ExclusivePage";
+import ExclusivePage from "../pages/conciergeServices/ExclusiveExperience/ExclusivePage";
 import CuratedDay from "../pages/conciergeServices/curatedDay/CuratedDay";
 
 // Services
 import PrivateChauffeurPage from "../pages/servicesPage/PrivateChauffeurPage";
-import MtFujiEscapePage from "../pages/services/mtFujiEscape/MtFujiEscapePage";
-import SignatureMultiDayToursPage from "../pages/services/signatureMultiDayTours/SignatureMultiDayToursPage";
-import KamakuraHeritageTripPage from "../pages/services/kamakuraHeritageDayTrip/KamakuraHeritageTripPage";
-import TokyoCity from "../pages/services/tokyo/TokyoCity";
+import MtFujiEscapePage from "../pages/Services/mtFujiEscape/MtFujiEscapePage";
+import SignatureMultiDayToursPage from "../pages/Services/signatureMultiDayTours/SignatureMultiDayToursPage";
+import KamakuraHeritageTripPage from "../pages/Services/kamakuraHeritageDayTrip/KamakuraHeritageTripPage";
+import TokyoCity from "../pages/Services/tokyo/TokyoCity";
 
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
