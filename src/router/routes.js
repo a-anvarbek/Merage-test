@@ -3,6 +3,7 @@ const ROUTES = {
   STORY: "/imperial-story",
   CONCIERGE: "/concierge",
   SERVICES: "/services",
+  PARTNERSHIP: "/partnership",
 
   // Concierge Services
   ACCOMMODATION: "/concierge/accommodation-reservations",
