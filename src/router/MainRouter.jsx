@@ -5,21 +5,22 @@ import ROUTES from "./routes";
 
 // Imported pages
 import Home from "../pages/home/Home";
-import ConciergePage from "../pages/concierge/ConciergePage";
 import ImperialStoryPage from "../pages/imperialStory/ImperialStoryPage";
+import ConciergePage from "../pages/concierge/ConciergePage";
+import PrivateChauffeurPage from "../pages/servicesPage/PrivateChauffeurPage";
 
 // Concierge Services
-import LuxuryTransportPage from "../pages/conciergeServices/luxuryTransport/LuxuryTransportPage";
 import AccommodationReservationsPage from "../pages/conciergeServices/accommodationReservations/AccommodationReservationsPage";
+import LuxuryTransportPage from "../pages/conciergeServices/luxuryTransport/LuxuryTransportPage";
 import ExclusivePage from "../pages/conciergeServices/ExclusiveExperience/ExclusivePage";
 import CuratedDay from "../pages/conciergeServices/curatedDay/CuratedDay";
 
 // Services
-import PrivateChauffeurPage from "../pages/servicesPage/PrivateChauffeurPage";
 import MtFujiEscapePage from "../pages/Services/mtFujiEscape/MtFujiEscapePage";
 import SignatureMultiDayToursPage from "../pages/Services/signatureMultiDayTours/SignatureMultiDayToursPage";
 import KamakuraHeritageTripPage from "../pages/Services/kamakuraHeritageDayTrip/KamakuraHeritageTripPage";
 import TokyoCity from "../pages/Services/tokyo/TokyoCity";
+import PartnershipPage from "../pages/partnership/PartnershipPage";
 
 
 // // Payments
@@ -56,6 +57,8 @@ const MainRouter = () => {
       />
       <Route path={ROUTES.KAMAKURA} element={<KamakuraHeritageTripPage />} />
       <Route path={ROUTES.TOKYO} element={<TokyoCity />} />
+
+      <Route path={ROUTES.PARTNERSHIP} element={<PartnershipPage />} />
     </Routes>
   );
 };

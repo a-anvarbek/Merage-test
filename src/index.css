@@ -1,15 +1,17 @@
 @import "tailwindcss";
-@import "./pages/concierge/styles/globals.css";
 @import "./pages/home/styles/globals.css";
 @import "./pages/imperialStory/styles/globals.css";
+@import "./pages/concierge/styles/globals.css";
 @import "./pages/servicesPage/styles/globals.css";
 
 /* Concierge Services */
 @import "./pages/conciergeServices/accommodationReservations/styles/globals.css";
 @import "./pages/conciergeServices/luxuryTransport/styles/globals.css";
 @import "./pages/conciergeServices/ExclusiveExperience/styles/globals.css";
-/* @import "src/pages/conciergeServices/exclusiveExperience/styles/globals.css"; */
+@import "./pages/conciergeServices/curatedDay/styles/globals.css";
 
 /* Services */
 @import "./pages/Services/mtFujiEscape/styles/globals.css";
 @import "./pages/Services/signatureMultiDayTours/styles/globals.css";
+@import "./pages/Services/kamakuraHeritageDayTrip/styles/globals.css";
+@import "./pages/Services/tokyo/styles/globals.css";
