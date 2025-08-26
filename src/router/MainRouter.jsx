@@ -21,6 +21,7 @@ import SignatureMultiDayToursPage from "../pages/Services/signatureMultiDayTours
 import KamakuraHeritageTripPage from "../pages/Services/kamakuraHeritageDayTrip/KamakuraHeritageTripPage";
 import TokyoCity from "../pages/Services/tokyo/TokyoCity";
 
+
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
 // import PaymentCanceled from "../pages/auth/PaymentCanceled";
