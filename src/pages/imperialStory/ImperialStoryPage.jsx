@@ -1,5 +1,4 @@
 import SmoothScroll from './components/SmoothScroll';
-import Navigation from './components/Navigation';
 import TextureBackground from './components/TextureBackground';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -13,7 +12,6 @@ export default function ImperialStoryPage() {
   return (
     <div className="min-h-screen bg-nippon-black relative">
       <TextureBackground />
-      <Navigation />
       <SmoothScroll>
         <div id="story">
           <Hero />

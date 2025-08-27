@@ -1,15 +1,13 @@
-
 // Pages and components
+import Navigation from "./components/Navigation";
 import MainRouter from "./router/MainRouter";
-// import Header from "./components/Header";
 // import Footer from "./components/Footer";
-
-
 
 function App() {
   return (
     <>
-        <MainRouter />
+      <Navigation />
+      <MainRouter />
     </>
   );
 }

@@ -1,6 +1,5 @@
 import SmoothScroll from "./components/SmoothScroll";
 import ScrollReveal from "./components/ScrollReveal";
-import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import LuxuryCredentials from "./components/LuxuryCredentials";
 import Services from "./components/Services";
@@ -16,9 +15,6 @@ export default function Home() {
     <SmoothScroll>
       <ScrollReveal>
         <div className="relative bg-nippon-warm-white">
-          {/* Professional Navigation Header */}
-          <Navigation />
-
           {/* Hero Section - Enhanced with exclusivity */}
           <Hero />
 
