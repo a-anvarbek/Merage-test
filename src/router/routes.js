@@ -12,6 +12,7 @@ const ROUTES = {
   EXCLUSIVE: "/concierge/exclusive-experience",
 
   // Services
+  AIRPORT_TRANSFERS: "/services/airport-transfers",
   ESCAPE: "/services/mt-fuji-escape",
   SIGNATURE_TOURS: "/services/signature-multi-day-tours",
   KAMAKURA: "/services/kamakura-heritage-trip",
