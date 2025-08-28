@@ -13,8 +13,8 @@ const ROUTES = {
 
   // Services
   AIRPORT_TRANSFERS: "/services/airport-transfers",
-  ESCAPE: "/services/mt-fuji-escape",
   SIGNATURE_TOURS: "/services/signature-multi-day-tours",
+  ESCAPE: "/services/mt-fuji-escape",
   KAMAKURA: "/services/kamakura-heritage-trip",
   TOKYO: "/services/tokyo",
   // PAYMENT_INTENT: "/payment-intent/:requestId",
