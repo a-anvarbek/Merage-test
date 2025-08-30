@@ -23,6 +23,7 @@ import SignatureMultiDayToursPage from "../pages/Services/signatureMultiDayTours
 import KamakuraHeritageTripPage from "../pages/Services/kamakuraHeritageDayTrip/KamakuraHeritageTripPage";
 import TokyoCity from "../pages/Services/tokyo/TokyoCity";
 import NikkoPage from "../pages/Services/nikko/NikkoPage";
+import TravelConsultationPage from "../pages/conciergeServices/travelConsultation/TravelConsultationPage";
 
 // // Payments
 // import PaymentIntent from "../pages/auth/PaymentIntent";
@@ -46,6 +47,7 @@ const MainRouter = () => {
       <Route path={ROUTES.LUXURY} element={<LuxuryTransportPage />} />
       <Route path={ROUTES.CURATED} element={<CuratedDay />} />
       <Route path={ROUTES.EXCLUSIVE} element={<ExclusivePage />} />
+      <Route path={ROUTES.TRAVEL} element={<TravelConsultationPage />} />
 
       {/* Services */}
       <Route path={ROUTES.SERVICES} element={<PrivateChauffeurPage />} />

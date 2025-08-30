@@ -95,7 +95,7 @@ export default function Concierge() {
       image: guideImage,
       cta: "Meet Your Guide",
       culturalNote: "Cultural fluency guaranteed",
-      route: null,
+      route: `${ROUTES.TRAVEL}`,
     },
   ];
 

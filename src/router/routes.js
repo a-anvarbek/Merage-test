@@ -10,6 +10,7 @@ const ROUTES = {
   LUXURY: "/concierge/luxury-transportation",
   CURATED: "/concierge/curated-day",
   EXCLUSIVE: "/concierge/exclusive-experience",
+  TRAVEL: "/concierge/travel-consultation",
 
   // Services
   AIRPORT_TRANSFERS: "/services/airport-transfers",
