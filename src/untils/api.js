@@ -62,6 +62,17 @@ export const restaurantApi = {
     axios.put(`${RESTAURANT_API_PREFIX}/${requestId}/quote`),
 };
 
+// ===== Luxury Transport Api =====
+export const luxuryTransportApi = {
+  getLuxuryTransportList: () => axios.get(`${LUXURY_TRANSPORT_API_PREFIX}`),
+  postLuxuryTransport: (data) =>
+    axios.post(`${LUXURY_TRANSPORT_API_PREFIX}`, data),
+  getLuxuryTransportById: (requestId) =>
+    axios.get(`${LUXURY_TRANSPORT_API_PREFIX}/${requestId}`),
+  putLuxuryTransport: (requestId) =>
+    axios.put(`${LUXURY_TRANSPORT_API_PREFIX}/${requestId}/quote`),
+};
+
 // ===== Curated Day Api =====
 export const curatedDayApi = {
   getCuratedDayList: () => axios.get(`${CURATED_DAY_API_PREFIX}`),
