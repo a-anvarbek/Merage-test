@@ -6,10 +6,12 @@ import storageSession from "redux-persist/lib/storage/session";
 
 // Slices
 import accommodationSlice from "./accommodationSlice";
+import restaurantSlice from "./restaurantSlice";
 
 // All reducers merging
 const rootReducer = combineReducers({
   accommodation: accommodationSlice,
+  restaurant: restaurantSlice,
 });
 
 // Transform
