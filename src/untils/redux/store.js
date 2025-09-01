@@ -8,12 +8,14 @@ import storageSession from "redux-persist/lib/storage/session";
 import accommodationSlice from "./accommodationSlice";
 import restaurantSlice from "./restaurantSlice";
 import luxuryTransportSlice from "./luxuryTransportSlice";
+import curatedDaySlice from "./curatedDaySlice";
 
 // All reducers merging
 const rootReducer = combineReducers({
   accommodation: accommodationSlice,
   restaurant: restaurantSlice,
   luxuryTransport: luxuryTransportSlice,
+  curatedDay: curatedDaySlice,
 });
 
 // Transform
