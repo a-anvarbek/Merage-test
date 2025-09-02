@@ -1,6 +1,7 @@
 // Libraries
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { postRestaurantAsync } from "../../../../untils/redux/restaurantSlice";
 import {
   Utensils,
   CheckCircle,
@@ -25,7 +26,6 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import tokyoNightDiningImage from "../assets/1.png";
 import michelinRestaurantImage from "../assets/2.png";
 import omakaseSushiImage from "../assets/3.png";
-import { postRestaurantAsync } from "../../../../untils/redux/restaurantSlice";
 
 const highlights = [
   {
@@ -114,7 +114,7 @@ export default function DiningReservations() {
         fullName: name,
         email: email,
         additionalNotes: notes,
-        numberOfGuests: numberOfGuest ? Number(numberOfGuest) : 0,
+        numberOfGuests: Number(numberOfGuest),
         phoneNumber: phoneNumber,
         reservationDate: date,
         preferredTime: preferredTime + ":00",
@@ -127,8 +127,6 @@ export default function DiningReservations() {
           console.log("successful");
         })
         .catch((error) => alert(error));
-
-      console.log("error", restaurantDate);
     }
   };
 
