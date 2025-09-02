@@ -16,6 +16,7 @@ export const postRestaurantAsync = createAsyncThunk(
       const response = await restaurantApi.postRestaurant(data);
       return response.data;
     } catch (error) {
+      console.error("Api error:", error);
       return rejectWithValue("Failed create restaurant");
     }
   }

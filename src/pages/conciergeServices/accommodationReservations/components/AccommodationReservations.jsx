@@ -102,15 +102,10 @@ export default function AccommodationReservations() {
   const [preferred, setPreferred] = useState("");
   const [desiredLocations, setDesiredLocations] = useState("");
 
-  // useEffect(() => {
-
-  // });
-
   const handleOrder = () => {
     if (
       name &&
       email &&
-      notes &&
       numberOfGuest &&
       phoneNumber &&
       checkInDate &&
