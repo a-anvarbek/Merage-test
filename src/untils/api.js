@@ -29,7 +29,7 @@ const ACCOMMODATION_API_PREFIX = "/api/concierge/accommodation";
 const RESTAURANT_API_PREFIX = "/api/concierge/restaurant";
 const LUXURY_TRANSPORT_API_PREFIX = "/api/concierge/luxury-transport";
 const CURATED_DAY_API_PREFIX = "/api/concierge/curated-day";
-const EXCLUSIVE_EXPERIENCE = "/api/concierge/exclusive-experience";
+const EXCLUSIVE_EXPERIENCE = "/api/concierge/exclusive-experiences";
 
 // ===== Payments API =====
 export const paymentsApi = {
