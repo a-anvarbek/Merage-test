@@ -1,6 +1,9 @@
+// Libraries
 import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
 import { ChevronDown, Play, Crown, ArrowRight } from "lucide-react";
+
+// components
+import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export default function Hero() {
@@ -8,7 +11,7 @@ export default function Hero() {
 
   useEffect(() => {
     // Auto-play video background after 3 seconds
-    const timer = setTimeout(() => {
+    const timer = setTimeout(() => { 
       setIsVideoPlaying(true);
     }, 3000);
 
@@ -186,9 +189,9 @@ export default function Hero() {
             autoPlay
             muted
             loop
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-60"
             style={{
-              filter: "brightness(0.3) contrast(1.2) saturate(1.1)",
+              filter: "brightness(0.6) contrast(1.1) saturate(1.05)", // avvalgidan yorug‘roq
             }}
           >
             <source
@@ -197,8 +200,8 @@ export default function Hero() {
             />
           </video>
 
-          {/* Enhanced video overlay */}
-          <div className="absolute inset-0 luxury-overlay opacity-80"></div>
+          {/* Overlayni ham yengillashtiramiz */}
+          <div className="absolute inset-0 luxury-overlay opacity-40"></div>
         </div>
       )}
     </section>
