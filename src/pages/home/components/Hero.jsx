@@ -6,6 +6,9 @@ import { ChevronDown, Play, Crown, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
+// Video
+import BGVideo from "../video/nipponImperial.mov"
+
 export default function Hero() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
@@ -195,7 +198,7 @@ export default function Hero() {
             }}
           >
             <source
-              src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4"
+              src={BGVideo}
               type="video/mp4"
             />
           </video>
