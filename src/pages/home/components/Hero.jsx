@@ -11,7 +11,7 @@ export default function Hero() {
 
   useEffect(() => {
     // Auto-play video background after 3 seconds
-    const timer = setTimeout(() => {
+    const timer = setTimeout(() => { 
       setIsVideoPlaying(true);
     }, 3000);
 
